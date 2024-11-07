@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Información - Hotel Mónaco</title>
+    <link rel="stylesheet" href="Styles/StylesConsultarInformacionHabtacion.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <button class="volver-button" onclick="window.location.href='Entorno_1.html';">VOLVER A LA PÁGINA PRINCIPAL</button>
+
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Hotel Mónaco">
+            </div>
+            <div class="form-container">
+                <h2>CONSULTAR INFORMACIÓN DE HABITACIÓN</h2>
+                <form id="consultaHabitacionForm">
+                    <label for="cedula">Por favor, ingrese la cédula asociada *</label>
+                    <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula" required>
+                    <button type="submit">CONSULTAR</button>
+                </form>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

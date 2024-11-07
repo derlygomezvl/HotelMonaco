@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('C:/xampp/htdocs/HotelMonaco/images/1.png'); /* Reemplaza esta URL con tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
+}
+
+/* Estilo de la cabecera */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #003366; /* Color del fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* Estilo del contenedor principal */
+.payment-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Títulos y párrafos */
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #003366; /* Color del título */
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Opciones de pago */
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    text-align: center;
+    cursor: pointer;
+}
+
+.payment-option img {
+    width: 120px;
+    height: auto;
+}
+
+.payment-option span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003366; /* Color del texto */
+    font-size: 18px;
+}
+
+/* Botón de cancelar */
+.btn-cancel {
+    margin-top: 20px;
+    background-color: #003366; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-cancel:hover {
+    background-color: #005bb5; /* Color del botón al pasar el mouse */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 20px;
+        width: 90%; /* Asegurar que el formulario no se extienda más allá de la pantalla en dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn-cancel {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}

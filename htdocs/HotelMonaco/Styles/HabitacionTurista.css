@@ -1,0 +1,189 @@
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-icon img {
+    max-height: 60px;
+    border-radius: 50%;
+}
+
+/* Sección de selección de habitaciones */
+.room-selection {
+    text-align: center;
+    padding: 1.1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-selection h2 {
+    color: #003366;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.room-description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para entradas de fecha */
+.dateInput {
+    height: 2.5em;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dateInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Estilo para número de personas */
+#peopleInput {
+    width: 80px;
+    margin: auto;
+    height: 2.5em;
+    text-align: center;
+}
+
+/* Estilos para el carrusel */
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #003366;
+    border-radius: 50%;
+}
+
+/* Botón de reservar */
+.custom-btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.custom-btn:hover {
+    color: #003366;
+}
+
+.custom-btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.custom-btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .room-selection {
+        padding: 20px;
+    }
+
+    .carousel-inner img {
+        max-height: 300px;
+    }
+}
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+    background: #fff;
+    color: #043464;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #fff;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: #043464;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #2c5ca4;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #fff;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  

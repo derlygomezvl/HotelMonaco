@@ -1,0 +1,223 @@
+/* Estilos Generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+/* Contenedor principal */
+.card {
+  width: 50%; /* Ajusta el porcentaje según sea necesario */
+  max-width: 1200px; /* Establece un ancho máximo si lo deseas */
+  margin: 0 auto; /* Centra el contenedor */
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #003366; /* Color azul fuerte */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.form-label {
+  font-weight: 500;
+  color: #003366; /* Color azul */
+}
+
+.form-control {
+  border: 2px solid #003366;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Botones */
+.button2 {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.button2:hover {
+  background-color: #005bb5;
+}
+
+button[type="submit"] {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #004080;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label[for="promociones"] {
+  display: inline;
+  color: #003366;
+  font-weight: 500;
+}
+
+/* Estilo del select */
+select.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #003366;
+}
+
+/* Contenedor de advertencias y mensajes */
+#messageContainer {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Icono de búsqueda y contenedor */
+.search-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+}
+
+.search-icon:hover {
+  opacity: 0.7;
+}
+
+/* Ajustes del diseño responsivo */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  .card {
+      padding: 20px;
+  }
+
+  .button2 {
+      font-size: 1rem;
+  }
+}
+/* Estilos para la cabecera */
+.navbar {
+    padding: 10px 20px;
+    background-color: #003366; /* Azul oscuro */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegurarse de que la cabecera esté por encima de otros elementos */
+}
+
+
+.navbar .btn-light {
+  background-color: #fff;
+  color: #2c5ca4;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.navbar .btn-light:hover {
+  background-color: #e6e6e6;
+}
+
+
+.navbar-brand img {
+    max-height: 80px; /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+.navbar .btn-primary {
+    background-color: #005bb5;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #004080;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: #fff;
+  color: #043464;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #fff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: #043464;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #2c5ca4;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #fff;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}

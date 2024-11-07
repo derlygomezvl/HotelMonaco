@@ -1,0 +1,164 @@
+/* Estilos Generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Color de fondo suave */
+  background-image: url('https://media.traveler.es/photos/61376f8bb57001fc862c86aa/master/w_1600%2Cc_limit/130740.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0; /* Elimina el margen predeterminado del body */
+  display: flex; /* Permite usar flexbox para centrar el formulario */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Cabecera */
+.header {
+    width: 100%;
+    background-color: #003366; /* Color del fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px; /* Espaciado interno */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    max-height: 80px; /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+/* Contenedor principal */
+.card {
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con opacidad */
+  padding: 40px; /* Espacio interno */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  width: 300px; /* Ancho del formulario */
+  margin-top: 100px; /* Espacio superior para evitar solapamiento con la cabecera */
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #003366; /* Color azul fuerte */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Etiquetas */
+label {
+  display: block; /* Coloca cada etiqueta en una línea */
+  margin-bottom: 5px; /* Espacio inferior */
+  color: #003366; /* Color de las etiquetas */
+}
+
+/* Inputs */
+input {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espacio interno */
+  margin-bottom: 10px; /* Espacio inferior */
+  border: 2px solid #003366; /* Borde azul */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Botones */
+button {
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Espacio interno */
+  background-color: #003366; /* Color de fondo azul */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+  background-color: #005bb5; /* Color más claro al pasar el ratón */
+}
+
+/* Contenedor de advertencias y mensajes */
+#messageContainer {
+  color: red; /* Color de advertencias */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Centra el texto */
+  margin-top: 10px; /* Espacio superior */
+}
+
+/* Ajustes del diseño responsivo */
+@media (max-width: 768px) {
+  .card {
+      padding: 20px; /* Espacio interno para pantallas pequeñas */
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Tamaño de fuente ajustado */
+  }
+
+  button {
+      font-size: 1rem; /* Tamaño de fuente ajustado para botones */
+  }
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: #fff;
+  color: #043464;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #fff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: #043464;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #2c5ca4;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #fff;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}

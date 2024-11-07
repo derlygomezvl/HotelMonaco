@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://colorate.azurewebsites.net/SwatchColor/EDF3F8'); /* Fondo de pantalla */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
+}
+
+/* Cabecera con logo */
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #003366; /* Color del fondo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Botón de regresar */
+.back-button img {
+  width: 50px;
+  height: auto;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30px; /* Cambiado a bordes redondeados */
+  padding: 40px;
+  text-align: left;
+  width: 100%;
+  max-width: 800px; /* Añadido para evitar que el contenedor se expanda más allá de la página */
+  margin: 120px auto; /* Centrar el formulario horizontalmente y separarlo de la cabecera */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h2 {
+  font-size: 24px;
+  color: #003366; /* Color del título */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Inputs y selects */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #003366; /* Color de borde */
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Estilo de los botones */
+.btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #003366; /* Color del botón */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Cambiado a bordes redondeados */
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #005bb5; /* Color del botón al pasar el mouse */
+}
+
+/* Advertencia */
+#mensajeAdvertencia {
+  display: none;
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .form-container {
+      padding: 20px;
+      width: 90%; /* Asegurar que el formulario no se extienda más allá de la pantalla en dispositivos móviles */
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  input, select {
+      font-size: 14px;
+  }
+
+  .btn {
+      padding: 12px;
+      font-size: 14px;
+  }
+}
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: #fff;
+  color: #043464;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #fff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: #043464;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #2c5ca4;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #fff;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+

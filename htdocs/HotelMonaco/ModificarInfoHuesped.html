@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/StylesModificarHuesped.css">
+    <title>Modificar Huésped</title>
+</head>
+<body>
+
+    <!-- Cabecera con logo y botón de regresar -->
+    <header class="header">
+        <div class="logo">
+            <img src="C:/xampp/htdocs/HotelMonaco/images/Logo Transparente-2.png" alt="Logo Hotel Monaco">
+        </div>
+        <div class="ms-auto">
+            <a href="index.html">
+                <button class="cssbuttons-io-button">
+                    Regresar
+                    <div class="icon">
+                        <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"
+                        ></path>
+                        </svg>
+                    </div>
+                    </button>
+            </a>
+        </div>
+    </header>
+
+    <!-- Formulario de modificar huésped -->
+    <div class="form-container">
+        <form id="modificarForm">
+            <h2>MODIFICAR HUÉSPED</h2>
+            <label for="cedula">Ingrese la cédula del huésped *</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <p>Ingrese la información que desee modificar</p>
+            <br>
+            <label for="nombre">Nombre(s) *</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="100">
+
+            <label for="apellido">Apellido(s) *</label>
+            <input type="text" id="apellido" name="apellido" required maxlength="100">
+
+            <label for="correo">Correo Electrónico *</label>
+            <input type="email" id="correo" name="correo" required maxlength="100">
+
+            <label for="telefono">Número de teléfono *</label>
+            <input type="tel" id="telefono" name="telefono" required maxlength="15">
+
+            <!-- Dirección separada -->
+            <label for="calle_carrera">Calle o Carrera</label>
+            <select id="calle_carrera" name="calle_carrera" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="Calle">Calle</option>
+                <option value="Carrera">Carrera</option>
+            </select>
+            <br>
+            <label for="calle_carrera_numero">Número de Calle/Carrera *</label>
+            <input type="text" id="calle_carrera_numero" name="calle_carrera_numero" required maxlength="50">
+            <label for="numero">Número de dirección *</label>
+            <input type="text" id="numero" name="numero" required maxlength="50">
+            <label for="complemento">Complemento (opcional)</label>
+            <input type="text" id="complemento" name="complemento" maxlength="255">
+
+            <label for="visita">Número de visita *</label>
+            <input type="number" id="visita" name="visita" required min="0">
+            
+            <div id="mensajeAdvertencia" style="display: none; color: red; margin-bottom: 20px;"></div>
+            
+            <!-- Botones de acción -->
+            <button type="submit" class="btn">MODIFICAR</button><br><br>
+            <button type="button" id="consultarButton" class="btn">CONSULTAR INFORMACIÓN</button><br><br>
+            <button type="button" id="nuevaBusquedaButton" class="btn">NUEVA BÚSQUEDA</button>
+        </form>
+    </div>
+
+    <script src="Js/modificarHuesped.js"></script>
+</body>
+</html>
