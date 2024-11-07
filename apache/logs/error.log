@@ -157,3 +157,6 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'oci8_12c' (tried: C:\
 [Wed Nov 06 18:36:30.808223 2024] [core:notice] [pid 26984:tid 420] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
 [Wed Nov 06 18:36:30.812223 2024] [mpm_winnt:notice] [pid 26984:tid 420] AH00418: Parent: Created child process 31364
 [Wed Nov 06 18:36:31.028046 2024] [ssl:warn] [pid 31364:tid 216] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 06 18:36:31.049829 2024] [ssl:warn] [pid 31364:tid 216] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'oci8_12c' (tried: C:\\xampp\\php\\ext\\oci8_12c (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\xampp\\php\\ext\\php_oci8_12c.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Nov 06 18:36:31.069304 2024] [mpm_winnt:notice] [pid 31364:tid 216] AH00354: Child: Starting 150 worker threads.
