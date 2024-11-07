@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +10,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/ConsultarInformacionHabitacion.js"></script> 
 </head>
-<body>
-    <button class="volver-button" onclick="window.location.href='Entorno_1.html';">VOLVER A LA PÁGINA PRINCIPAL</button>
 
+<body>
+  
+    <div class="header">
+        <div class="logo-header">
+            <img src="images/Logo Transparente-2.png" alt="Logo Hotel Mónaco">
+        </div>
+        <button class="button" onclick="window.location.href='Entorno_1.html';">Volver al menú principal</button>
+    </div>
+
+    
     <div class="background">
         <div class="overlay"></div>
         <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Logo Hotel Mónaco">
-            </div>
             <div class="form-container">
                 <h2>CONSULTAR INFORMACIÓN DE HABITACIÓN</h2>
                 <form id="consultaHabitacionForm">
                     <label for="cedula">Por favor, ingrese la cédula asociada *</label>
-                    <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula" required>
-                    <button type="submit">CONSULTAR</button>
+                    <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula" pattern="\d+" required>
+                    <button type="submit" class="button">CONSULTAR</button>
                 </form>
                 <div id="resultado"></div>
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    
+    <div class="modal-overlay" id="modal" style="display: none;">
+        <div class="modal-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/5220/5220262.png" alt="Error" class="error-image">
+            <p>No se encontró la información correspondiente.</p>
+            <button class="close-modal" onclick="document.getElementById('modal').style.display='none';">Cerrar</button>
+        </div>
+    </div>
 </body>
+
+<script src ='js/ConsultarInformacionHabitacion.js'></script>
+
 </html>
