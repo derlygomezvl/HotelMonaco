@@ -23,7 +23,7 @@
             const checkInInput = document.getElementById('checkInDate');
             const checkOutInput = document.getElementById('checkOutDate');
             const numPersonasInput = document.getElementById('numPersonas');
-            const roomId = 1;
+            const roomId = 2;
 
             // Limitar la fecha mínima de check-in y la fecha máxima de check-out
             checkInInput.min = today.toISOString().split('T')[0];
@@ -116,7 +116,7 @@
     </nav>
 
     <div style="margin-top: 100px;"></div>
-    <br>
+
     <section class="room-selection">
         <h2>Habitación Turista</h2>
         <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 50%; margin: 0 auto; border-radius: 20px; overflow: hidden;">
@@ -164,7 +164,7 @@
             <h5 class="mb-3">Número de personas:</h5>
             <input type="number" id="numPersonas" class="form-control mx-auto" style="width: 200px;" min="1" max="2" />
         </div>
-        <br>
+
         <button class="custom-btn mt-3">Consultar</button>        
     </section>
 

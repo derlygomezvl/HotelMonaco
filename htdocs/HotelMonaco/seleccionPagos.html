@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/StylesSeleccionHuesped.css">
+    <script>
+        function volver() {
+          window.history.back();
+        }
+    </script>
     <title>Selección de Medio de Pago</title>
 </head>
 <body>
@@ -24,19 +29,19 @@
         <div class="payment-options">
             <!-- Opción de transferencia -->
             <div class="payment-option">
-                <img src="C:/xampp/htdocs/HotelMonaco/images/Transferencia.png" alt="Transferencia">
+                <img src="C:/xampp/htdocs/HotelMonaco/images/Transferencia.png" alt="Transferencia" onclick="window.location.href='Transferencia.html';">
                 <span>TRANSFERENCIA</span>
             </div>
 
             <!-- Opción de efectivo -->
             <div class="payment-option">
-                <img src="C:/xampp/htdocs/HotelMonaco/images/Efectivo.png" alt="Efectivo">
+                <img src="C:/xampp/htdocs/HotelMonaco/images/Efectivo.png" alt="Efectivo" onclick="window.location.href='Efectivo.html';">
                 <span>EFECTIVO</span>
             </div>
         </div>
 
         <!-- Botón de cancelar -->
-        <button class="btn-cancel">Cancelar</button>
+        <button class="btn-cancel" onclick="volver()">Cancelar</button>
     </div>
 
 </body>

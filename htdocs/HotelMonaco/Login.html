@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Styles/Login.css">
+    <script>
+      function verificarPassword() {
+        var password = document.querySelector('input[name="password"]').value;
+        
+        if (password === 'admin') {
+            window.location.href = 'C:/xampp/htdocs/HotelMonaco/Entorno_1.html';
+        } else if (password === '1234') {
+            window.location.href = 'C:/xampp/htdocs/HotelMonaco/Entorno_2.html';
+        } else {
+            alert('Contraseña incorrecta');
+        }
+      }
+    </script>
+</head>
+<body>
+    
+<div class="login-box">
+  <p>Iniciar</p>
+  <form onsubmit="return false;">
+    <div class="user-box">
+      <input required="" name="password" type="password">
+      <label>Contraseña</label>
+    </div>
+    <a href="#" onclick="verificarPassword()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Ingresar
+    </a>
+  </form>
+  <p><a href="#" class="a2">Ingrese la contraseña correspondiente</a></p>
+</div>
+
+</body>
+</html>

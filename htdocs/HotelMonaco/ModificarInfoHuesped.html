@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/StylesModificarHuesped.css">
+    <script>
+        function volver() {
+          window.history.back();
+        }
+      </script>
     <title>Modificar Huésped</title>
 </head>
 <body>
@@ -15,25 +20,23 @@
             <img src="C:/xampp/htdocs/HotelMonaco/images/Logo Transparente-2.png" alt="Logo Hotel Monaco">
         </div>
         <div class="ms-auto">
-            <a href="index.html">
-                <button class="cssbuttons-io-button">
-                    Regresar
-                    <div class="icon">
-                        <svg
+            <button class="cssbuttons-io-button" onclick="volver()">
+                Regresar
+                <div class="icon">
+                    <svg
                         height="24"
                         width="24"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                        >
+                    >
                         <path d="M0 0h24v24H0z" fill="none"></path>
                         <path
-                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            d="M7.828 11l5.364-5.364-1.414-1.414L4 12l7.778 7.778 1.414-1.414L7.828 13H20v-2z"
                             fill="currentColor"
                         ></path>
-                        </svg>
-                    </div>
-                    </button>
-            </a>
+                    </svg>
+                </div>
+            </button>
         </div>
     </header>
 
