@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Monaco - Confirmar Reservación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/StylesReservar.css">
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const checkinDate = params.get('checkInDate');
+        const checkoutDate = params.get('checkOutDate');
+        const roomId = params.get('id_habitacion');
+        const numPersonas = params.get('numPersonas');
+        const valorPago = params.get('valorPago');
+
+        window.onload = function() {
+            document.getElementById('checkin').textContent = checkinDate;
+            document.getElementById('checkout').textContent = checkoutDate;
+            document.getElementById('idHabitacion').textContent = roomId;
+            document.getElementById('numPersonas').textContent = numPersonas;
+            document.getElementById('valorPago').textContent = valorPago;
+
+            // Limitar el campo cédula
+            document.getElementById('cedula').addEventListener('input', function () {
+                const cedulaInput = this;
+                cedulaInput.value = cedulaInput.value.replace(/[^0-9]/g, '').slice(0, 15);
+            });
+        };
+
+        function confirmarReserva() {
+            const observaciones = document.getElementById('observaciones').value;
+            const cedula = document.getElementById('cedula').value;
+
+            // Validación de cédula
+            if (!cedula || cedula.length > 15) {
+                alert('Por favor, ingresa una cédula válida con un máximo de 15 dígitos.');
+                return;
+            }
+
+            // Validación de observaciones
+            if (observaciones.length > 254) {
+                alert('Las observaciones no pueden exceder los 254 caracteres.');
+                return;
+            }
+
+            // Verificar si la cédula existe en la base de datos
+            fetch(`http://localhost/HotelMonaco/Php/verificarCedula.php?cedula=${cedula}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error en la red');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (!data.existe) {
+                        alert('La cédula no existe en nuestros registros. Por favor, regístrate.');
+                        window.open('Regitro_New.html', '_blank');
+                        return;
+                    }
+
+                    // Si la cédula existe, proceder a registrar la reserva
+                    fetch('http://localhost/HotelMonaco/Php/registrarReserva.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            observaciones: observaciones,
+                            fecha_ingreso: checkinDate,
+                            fecha_salida: checkoutDate,
+                            valor_pago: valorPago,
+                            cedula: cedula,
+                            id_habitacion: roomId
+                        })
+                    })
+                    .then(response => response.text())
+                    .then(text => {
+                        console.log('Respuesta del servidor:', text);
+                        try {
+                            const data = JSON.parse(text);
+                            if (data.success) {
+                                alert('Reserva confirmada con éxito. ¡Gracias por reservar con nosotros!');
+                                window.location.href = 'seleccionarHabitacion.html';
+                            } else {
+                                alert('Error al confirmar la reserva: ' + data.error);
+                            }
+                        } catch (err) {
+                            console.error('Error al analizar la respuesta:', err);
+                            alert('Ocurrió un error inesperado. Respuesta del servidor: ' + text);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error en la solicitud de reserva:', error);
+                        alert('Ocurrió un error al confirmar la reserva. Por favor, inténtalo de nuevo.');
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al verificar la cédula:', error);
+                    alert('Ocurrió un error al verificar la cédula. Por favor, inténtalo de nuevo.');
+                });
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #003366; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="C:/xampp/htdocs/HotelMonaco/images/Logo Transparente-2.png" alt="Logo Hotel Monaco" width="150" height="auto">
+            </a>
+            <div class="ms-auto">
+                <button class="cssbuttons-io-button" onclick="window.history.back()">
+                    Regresar
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 80px;">
+        <div class="content">
+            <br><br><br>
+            <h2 class="text-center">Confirma tu Reservación</h2>
+            <p><strong>Fecha de Entrada:</strong> <span id="checkin"></span></p>
+            <p><strong>Fecha de Salida:</strong> <span id="checkout"></span></p>
+            <p><strong>ID de Habitación:</strong> <span id="idHabitacion"></span></p>
+            <p><strong>Número de Personas:</strong> <span id="numPersonas"></span></p>
+            <p><strong>Valor a Pagar:</strong> $<span id="valorPago"></span></p>
+
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" class="form-control" maxlength="254"></textarea>
+            <br>
+
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" class="form-control" required>
+            <br>
+            
+            <button class="btn btn-primary mt-3" onclick="confirmarReserva()">Confirmar Reserva</button>
+        </div>
+    </div>
+</body>
+</html>
