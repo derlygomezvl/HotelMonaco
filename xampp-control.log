@@ -1,0 +1,153 @@
+11:38:56 p. m.  [main] 	Initializing Control Panel
+11:38:56 p. m.  [main] 	Windows Version:  Home  64-bit
+11:38:56 p. m.  [main] 	XAMPP Version: 8.0.30
+11:38:56 p. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+11:38:56 p. m.  [main] 	Running with Administrator rights - good!
+11:38:56 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:38:56 p. m.  [main] 	Checking for prerequisites
+11:38:56 p. m.  [main] 	All prerequisites found
+11:38:56 p. m.  [main] 	Initializing Modules
+11:38:56 p. m.  [Apache] 	XAMPP Apache is already running on port 80
+11:38:56 p. m.  [Apache] 	XAMPP Apache is already running on port 443
+11:38:56 p. m.  [main] 	Starting Check-Timer
+11:38:56 p. m.  [main] 	Control Panel Ready
+1:15:23 a. m.  [Apache] 	Attempting to stop Apache (PID: 3016)
+1:15:23 a. m.  [Apache] 	Attempting to stop Apache (PID: 9180)
+1:15:23 a. m.  [Apache] 	Status change detected: stopped
+1:15:27 a. m.  [main] 	Deinitializing Modules
+1:15:27 a. m.  [main] 	Deinitializing Control Panel
+
+7:48:14 a. m.  [main] 	Initializing Control Panel
+7:48:14 a. m.  [main] 	Windows Version:  Home  64-bit
+7:48:14 a. m.  [main] 	XAMPP Version: 8.0.30
+7:48:14 a. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+7:48:14 a. m.  [main] 	Running with Administrator rights - good!
+7:48:14 a. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+7:48:14 a. m.  [main] 	Checking for prerequisites
+7:48:16 a. m.  [main] 	All prerequisites found
+7:48:16 a. m.  [main] 	Initializing Modules
+7:48:16 a. m.  [main] 	Starting Check-Timer
+7:48:16 a. m.  [main] 	Control Panel Ready
+7:48:18 a. m.  [Apache] 	Attempting to start Apache app...
+7:48:19 a. m.  [Apache] 	Status change detected: running
+12:03:17 p. m.  [Apache] 	Attempting to stop Apache (PID: 19032)
+12:03:17 p. m.  [Apache] 	Attempting to stop Apache (PID: 17232)
+12:03:17 p. m.  [Apache] 	Status change detected: stopped
+10:07:35 p. m.  [main] 	Deinitializing Modules
+10:07:35 p. m.  [main] 	Deinitializing Control Panel
+
+9:29:16 p. m.  [main] 	Initializing Control Panel
+9:29:16 p. m.  [main] 	Windows Version:  Home  64-bit
+9:29:16 p. m.  [main] 	XAMPP Version: 8.0.30
+9:29:16 p. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+9:29:16 p. m.  [main] 	Running with Administrator rights - good!
+9:29:16 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+9:29:16 p. m.  [main] 	Checking for prerequisites
+9:29:18 p. m.  [main] 	All prerequisites found
+9:29:18 p. m.  [main] 	Initializing Modules
+9:29:18 p. m.  [main] 	Starting Check-Timer
+9:29:18 p. m.  [main] 	Control Panel Ready
+9:29:21 p. m.  [Apache] 	Attempting to start Apache app...
+9:29:21 p. m.  [Apache] 	Status change detected: running
+9:39:18 p. m.  [Apache] 	Status change detected: stopped
+9:39:18 p. m.  [Apache] 	Error: Apache shutdown unexpectedly.
+9:39:18 p. m.  [Apache] 	This may be due to a blocked port, missing dependencies, 
+9:39:18 p. m.  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+9:39:18 p. m.  [Apache] 	Press the Logs button to view error logs and check
+9:39:18 p. m.  [Apache] 	the Windows Event Viewer for more clues
+9:39:18 p. m.  [Apache] 	If you need more help, copy and post this
+9:39:18 p. m.  [Apache] 	entire log window on the forums
+9:39:20 p. m.  [Apache] 	Status change detected: running
+9:40:33 p. m.  [main] 	Deinitializing Modules
+9:40:33 p. m.  [main] 	Deinitializing Control Panel
+
+9:41:42 p. m.  [main] 	Initializing Control Panel
+9:41:42 p. m.  [main] 	Windows Version:  Home  64-bit
+9:41:42 p. m.  [main] 	XAMPP Version: 8.0.30
+9:41:42 p. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+9:41:42 p. m.  [main] 	Running with Administrator rights - good!
+9:41:42 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+9:41:42 p. m.  [main] 	Checking for prerequisites
+9:41:45 p. m.  [main] 	All prerequisites found
+9:41:45 p. m.  [main] 	Initializing Modules
+9:41:45 p. m.  [main] 	Starting Check-Timer
+9:41:45 p. m.  [main] 	Control Panel Ready
+9:41:51 p. m.  [Apache] 	Attempting to start Apache app...
+9:41:51 p. m.  [Apache] 	Status change detected: running
+9:50:27 p. m.  [Apache] 	Attempting to stop Apache (PID: 15552)
+9:50:27 p. m.  [Apache] 	Attempting to stop Apache (PID: 15744)
+9:50:27 p. m.  [Apache] 	Status change detected: stopped
+9:50:55 p. m.  [main] 	Deinitializing Modules
+9:50:55 p. m.  [main] 	Deinitializing Control Panel
+
+12:28:24 p. m.  [main] 	Initializing Control Panel
+12:28:24 p. m.  [main] 	Windows Version:  Home  64-bit
+12:28:24 p. m.  [main] 	XAMPP Version: 8.0.30
+12:28:24 p. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+12:28:24 p. m.  [main] 	Running with Administrator rights - good!
+12:28:24 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+12:28:24 p. m.  [main] 	Checking for prerequisites
+12:28:28 p. m.  [main] 	All prerequisites found
+12:28:28 p. m.  [main] 	Initializing Modules
+12:28:28 p. m.  [main] 	Starting Check-Timer
+12:28:28 p. m.  [main] 	Control Panel Ready
+12:28:52 p. m.  [Apache] 	Attempting to start Apache app...
+12:28:53 p. m.  [Apache] 	Status change detected: running
+1:53:52 p. m.  [Apache] 	Attempting to stop Apache (PID: 1144)
+1:53:52 p. m.  [Apache] 	Attempting to stop Apache (PID: 17160)
+1:53:52 p. m.  [Apache] 	Status change detected: stopped
+1:54:22 p. m.  [main] 	Deinitializing Modules
+1:54:22 p. m.  [main] 	Deinitializing Control Panel
+
+4:16:59 p. m.  [main] 	Initializing Control Panel
+4:16:59 p. m.  [main] 	Windows Version:  Home  64-bit
+4:16:59 p. m.  [main] 	XAMPP Version: 8.0.30
+4:16:59 p. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+4:16:59 p. m.  [main] 	Running with Administrator rights - good!
+4:16:59 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+4:16:59 p. m.  [main] 	Checking for prerequisites
+4:17:02 p. m.  [main] 	All prerequisites found
+4:17:02 p. m.  [main] 	Initializing Modules
+4:17:02 p. m.  [main] 	Starting Check-Timer
+4:17:02 p. m.  [main] 	Control Panel Ready
+4:17:05 p. m.  [Apache] 	Attempting to start Apache app...
+4:17:05 p. m.  [Apache] 	Status change detected: running
+4:57:04 p. m.  [Apache] 	Attempting to stop Apache (PID: 17764)
+4:57:04 p. m.  [Apache] 	Attempting to stop Apache (PID: 18948)
+4:57:04 p. m.  [Apache] 	Status change detected: stopped
+5:01:48 p. m.  [main] 	Deinitializing Modules
+5:01:48 p. m.  [main] 	Deinitializing Control Panel
+
+3:35:37 p. m.  [main] 	Initializing Control Panel
+3:35:37 p. m.  [main] 	Windows Version:  Home  64-bit
+3:35:37 p. m.  [main] 	XAMPP Version: 8.0.30
+3:35:37 p. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+3:35:37 p. m.  [main] 	Running with Administrator rights - good!
+3:35:37 p. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:35:37 p. m.  [main] 	Checking for prerequisites
+3:35:37 p. m.  [main] 	All prerequisites found
+3:35:37 p. m.  [main] 	Initializing Modules
+3:35:37 p. m.  [main] 	Starting Check-Timer
+3:35:37 p. m.  [main] 	Control Panel Ready
+3:35:39 p. m.  [Apache] 	Attempting to start Apache app...
+3:35:39 p. m.  [Apache] 	Status change detected: running
+5:10:45 p. m.  [Apache] 	Attempting to stop Apache (PID: 9364)
+5:10:45 p. m.  [Apache] 	Attempting to stop Apache (PID: 2332)
+5:10:45 p. m.  [Apache] 	Status change detected: stopped
+2:18:10 a. m.  [main] 	Deinitializing Modules
+2:18:10 a. m.  [main] 	Deinitializing Control Panel
+
+10:58:11 a. m.  [main] 	Initializing Control Panel
+10:58:11 a. m.  [main] 	Windows Version:  Home  64-bit
+10:58:11 a. m.  [main] 	XAMPP Version: 8.0.30
+10:58:11 a. m.  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+10:58:11 a. m.  [main] 	Running with Administrator rights - good!
+10:58:11 a. m.  [main] 	XAMPP Installation Directory: "c:\xampp\"
+10:58:11 a. m.  [main] 	Checking for prerequisites
+10:58:12 a. m.  [main] 	All prerequisites found
+10:58:12 a. m.  [main] 	Initializing Modules
+10:58:12 a. m.  [main] 	Starting Check-Timer
+10:58:12 a. m.  [main] 	Control Panel Ready
+10:50:47 a. m.  [main] 	Deinitializing Modules
+10:50:47 a. m.  [main] 	Deinitializing Control Panel
+
